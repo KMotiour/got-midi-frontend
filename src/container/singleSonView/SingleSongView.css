@@ -1,0 +1,72 @@
+
+
+#songCardDetails {
+    /* box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px; */
+    font-size: 13px;
+    color: #101010;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #788a967a;
+    padding: 0.5rem 2rem;
+    font-style: bold;
+    margin-top: 0;
+}
+#songCardDetails:hover {
+    background: #1cadfe;
+    color: white;
+    border: none;
+    position: relative;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    list-style: none;
+    padding: 0 0 0 1em;
+    margin: 0 0 1.618em;
+    overflow: hidden;
+    position: relative;
+}
+.midiDescrition a{
+    font-size: 18px;
+    /* border-bottom: 1px solid #1cadfe; */
+    /* border-right: 4px solid #1cadfe; */
+    text-decoration: none;
+position: relative;
+}
+
+.midiDescrition a:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: rgba(28,173,254,255);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 4px;
+  }
+
+.midiDescrition p{
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+#desc-str-newline{
+font-size: 14px;
+}
+.midiDescrition {
+    padding: 2rem;
+    border: 1px solid #f3f3dc9e;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+.midiDescrition:hover{
+    /* background-color: #eef2ff; */
+    
+}
+
+
+
+#listofsongitme:hover{
+    /* border-left: 1px solid #1cadfe; */
+}

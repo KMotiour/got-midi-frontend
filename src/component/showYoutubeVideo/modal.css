@@ -1,0 +1,18 @@
+.ant-modal-body {
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+}
+.ant-modal-footer {
+    padding: 0px 16px;
+    text-align: right;
+    background: transparent;
+    border-top: 1px solid #f0f0f0;
+    border-radius: 0 0 2px 2px;
+}
+
+.anticon svg {
+    display: inline-block;
+    color: #848383;
+}

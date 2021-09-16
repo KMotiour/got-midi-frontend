@@ -1,0 +1,2734 @@
+/* ============ */
+/* basic setup */
+/* ============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* html {
+    font-size: 100%;
+} */
+.clearfix {
+    overflow: auto;
+  }
+
+  body {
+    font-family: Heebo,sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; 
+}
+nav a .logo_title{
+    font-size: 40px;
+    font-weight: bold;
+}
+nav .logo_discription {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    line-height: 2px;
+}
+.navbar-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#navbarSupportedContent{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo {
+    padding-left: 2rem;
+    padding-right: 15%;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: 430px;
+    vertical-align: middle;
+}
+form button {
+    background: rgba(28,173,254,255);
+}
+
+#pagelink{
+    padding-right: 2rem;
+}
+#pagelink ul li a{
+    font-weight: bolder;
+    color: black;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-color: #2595be81;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #2596be;
+}
+.navbar {
+    overflow: hidden;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 7;
+    border-bottom: 2px solid #343a4029;
+}
+#searchbar{
+    border: none;
+}
+#Search_barbox {
+    border: 2px solid #1cadfe;
+    border-radius: 6px;
+}
+/* ___________Navbar end____________ */
+.main {
+    padding: 16px;
+    margin-top: 6rem;
+    height: auto;
+}
+#main_conain{
+    height: auto;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+    /* overflow: scroll; */
+    
+  }
+  .column h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 60%;
+      margin: auto;
+    }
+  }
+
+  .myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    width: 15%;
+    margin: auto;
+    text-align: center;
+    margin-left: 27%;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1cadfe 5%, #1cadfe 100%);
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #ffffff;
+
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.feature-img {
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    color: black;
+  }
+  .flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.labels {
+    color: #000000bf;
+    background: #efefef;
+    font-size: 11px;
+    padding: 5px 3px;
+    margin-right: 14px;
+    border-radius: 10px;
+    /* box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset; */
+    box-shadow: rgb(41 41 83 / 13%) 0px 38px 76px -23px, rgb(0 0 0 / 23%) 0px 30px 60px -35px, rgb(10 37 57 / 35%) 0px -4px 1px -4px inset;
+}
+#addtoCard {
+    /* box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px; */
+    font-size: 13px;
+    color: #101010;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #788a9600;
+    padding: 0.5rem 2rem;
+    font-style: bold;
+    margin-top: 2.2rem;
+}
+
+  #addtoCard:hover {
+    background: #1cadfe;
+    color: white;
+    border: none;
+    position: relative;
+}
+.flex-item div img {
+    width: 9rem;
+    position: inherit;
+    border-radius: 4px;
+}
+.flex-item h6 {
+    color: #9da5b0;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.2rem; */
+}
+#song_data {
+    display: flex;
+    justify-content: left;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.flex-item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3138d9;
+}
+.flex-item {
+    margin-top: 0rem;
+
+}
+.single_songDetels {
+    box-shadow: 0 4px 24px rgb(48 62 75 / 6%);
+    padding: 0px 8px;
+}
+.small_subtitle{
+   color: #9da5b0;
+   padding: 1rem;
+}
+div p span{
+    font-size: 16px;
+}
+.flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+    background-color: #fff;
+    padding-right: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.single_songDetels:hover .flex-item{
+    background-color: #eef2ff;
+}
+.single_songDetels:hover .labels{
+    background-color: #fff;
+}
+
+.flex3 button {
+    margin: 10px;
+    padding: 4px 10px;
+    color: #0a0a0a;
+    background: #efefef;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 28px 56px -35px, rgb(10 34 57 / 36%) 0px 0px 2px 0px inset;
+}
+.flex1 {
+    flex: 0 1 1em;
+    padding: 0 0.1rem;
+    border-radius: 8px 0px 0px 8px;
+}
+.flex2 {
+    flex: 2 2 2em;
+    line-height: 9px;
+    padding-right: 12rem;
+    
+}
+
+  .single_songDetels:hover{
+ /* transform: scale(1.00); */
+/* box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06); */
+/* box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px; */
+padding-bottom: 0;
+margin-bottom: 0;
+background-color: #eef2ff;
+/* border-left: 2px solid #1cadfe; */
+  }
+  /* ___________for ADD----------- */
+  .cardforadd {
+    margin-top: 2rem;
+    /* background: grey; */
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #80808063;
+    border-radius: 12px;
+}
+  .add_BOX{
+    height: 10em;
+    position: relative }
+/* div.container4 p {
+   
+  } */
+
+  .videoimg {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* padding-bottom: 6px;
+    padding-top: 6px; */
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #08080885;
+  }
+  .videoimg:hover .overlay {
+    opacity: 0.9;
+  }
+  .icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+.videoimg a{
+    color: white;
+}
+ .videoimg:hover .icon {
+     display: block;
+     
+ }
+
+ .single_songDetels{
+    width: 100%;
+  }
+  h4 {
+    width: 100%;
+    margin: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 1.5rem;
+}
+  .myButton{
+    width: 20%;
+margin: auto;
+margin-bottom: 1rem;
+  }
+  /* -------------------CardPageCss__________________ */
+.cardPage{
+    background: white;
+    border: 1px solid #f0f0f0;
+    padding: 20px 0px 20px 20px;
+    margin-top: 18px;
+    width: 70%;
+    margin: auto;
+}
+
+.cardPage p{
+    color: #000;
+    font-size: 12px;
+}
+
+.songnavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    box-shadow:none;
+}
+
+.cardPages_prices {
+    background: white;
+    border: 4px solid #f0f0f0;
+    margin-top: 18px;
+    width: 80%;
+    margin: auto;
+    border-radius: 12px;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 12.50%;
+    background-color: white;
+    padding: 7px 2rem;
+    font-size: 20px;
+    z-index: 6;
+    border-radius: 12px 12px 0px 0px;
+}
+.Price_title {
+    font-family: Heebo,sans-serif;
+    color: #0a0a0a;
+    font-size: 16px;
+}
+
+.S_price {
+    font-size: 13px;
+    color: #101010;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #d7e0e6de;
+    padding: 0.5rem 3rem;
+    font-style: bold;
+    margin-top: 0.6rem;
+    margin-right: 8rem;
+    margin-left: 17rem;
+    margin-right: 4rem;
+}
+.flex-container{
+    margin-top: 0rem;
+}
+#Cardpageflexcontainer{
+    align-items: center;
+
+}
+ /* .single_songDetels:hover{
+    transform: none;
+    box-shadow: none;
+ } */
+ .single_songDetelsss {
+    transform: none;
+    box-shadow: none;
+    margin: 1rem;
+    padding: 0.1rem 0.1rem;
+        padding-top: 1rem;
+    box-shadow: rgba(221, 223, 225, 0.97) 0px 8px 24px;
+    padding-top: 0.2rem;
+}
+ .flex-item div img {
+    width: 5rem;
+    position: inherit;
+    border-radius: 4px;
+}
+
+.flex2 {
+    flex: 2 2 2em;
+   
+    padding-right: 12rem;
+}
+.flex3 {
+    flex: 2 4 3em;
+    border-radius: 0px 8px 8px 0px;
+    text-align: right;
+}
+#cartPageBorder{
+    border-radius: 8px
+}
+.totall_prices{
+float: right;
+margin-right: 5rem;
+ 
+}
+#purchasebtn {
+    float: right;
+    margin-right: 4rem;
+    padding: 4px 2rem;
+    color: white;
+    background: #1cadfe;
+    width: 94%;
+}
+.flex-item p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3138d9;
+    padding-top: 1;
+    /* padding-bottom: 0.27rem; */
+    line-height: 1;
+}
+
+.videoimg {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* padding-bottom: 6px; */
+}
+/* -----------End card css--------------- */
+
+  /* ------------------Download page css----------------- */
+  #downloadpage {
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+#img {
+    width: 5rem;
+    position: inherit;
+    border-radius: 4px;
+}
+.top_song_D{
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+    height: auto;
+}
+.latest_P_D{
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+    height: auto;
+}
+/* _____________AdminPage------------------ */
+#admin_songlist{
+width: 80%;
+margin: auto;
+}
+
+.DopfileDiv{
+    margin-top: 3rem;
+     width: 60%;
+     height: 200px;
+     border:2px dotted gray;
+     margin: auto;
+    
+}
+#uploadicon{
+    font-size: 44px;
+}
+
+.song_UPload_list{
+width: 70%;
+margin: auto;
+margin-top: 3rem;
+text-align:left;
+
+}
+.musicTopbar {
+    display: flex;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+}
+#searchIcon{
+padding-top: 0;
+margin-top: 0;
+}
+.MusicPage{
+    margin-top: 1rem;
+}
+#musicsearch{
+    align-items: center;
+}
+.songselect{
+    align-self: center;
+}
+.btnC_close{
+    color: red;
+}
+.updatefromF_A {
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8dadc;
+    width: 76%;
+    margin: auto;
+    padding: 3rem;
+        padding-left: 3rem;
+    width: 64%;
+    margin: auto;
+    padding-left: 0;
+}
+
+.topListM_D {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    /* margin-top: 20px; */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.allSonglist{
+    width: 50%;
+}
+.songBoard{
+margin: 8px;
+overflow-y: scroll;
+height: 67vh;
+scrollbar-width: none;
+}
+#updatesongdata{
+    margin-left: 200px;
+    padding-bottom: 6rem;
+}
+
+.ToplistSearchbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pageMaindiv{
+    margin-top: 3rem;
+}
+
+
+/* .asideM_div{
+    display: flex;
+    width: 100%;
+    margin: 0 2rem;
+} */
+/* .aside_add {
+    width: 30%;
+    box-sizing: border-box;
+    margin: 2rem;
+    margin-right: 6rem;
+    padding: 0rem 3rem;
+    color: #8b8b8b;
+} */
+.aside_add h4{
+    font-size: 1rem;
+    border-bottom: 1px solid #8b8b8b;
+    color: #8b8b8b;
+}
+
+.aside_add p{
+    font-size: 0.8rem;
+    color: #8b8b8b;
+}
+.maincontainS{
+    width: 66%;
+}
+
+
+.aside_addP {
+    width: 32%;
+    box-sizing: border-box;
+    margin: 2rem;
+        margin-right: 2rem;
+    margin-right: 3rem;
+    padding: 0rem 3rem;
+    color: #8b8b8b;
+}
+
+
+.aside_addP p{
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+.aside_addP h4{
+    font-size: 18px;
+    border-bottom: 1px solid #8b8b8b;
+    color: #8b8b8b;
+}
+
+.TopPianoMIdiD {
+    width: 80%;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin: 0 8rem;
+}
+
+#gotmidiLogo{
+    width: 100%;
+}
+.logoDiv {
+    width: 17%;
+    margin-right: 15%;
+}
+
+#top_Songs_list{
+    width: 74%;
+}
+
+.maincontainST{
+    margin-right: 0rem;
+    width: 100%;
+}
+.side__data{
+    padding-left: 5rem;
+}
+
+.songAlbum {
+    width: 200px;
+    height: 30px;
+    background-color: rgba(148, 148, 150, 0.16);
+    position: fixed;
+    top: 16%;
+    right: 0;
+    margin-right: 1rem;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.songAlbum_Colse{
+    background: none;
+
+}
+.div_Aline{
+    /* text-align: right; */
+    padding-right: 2rem;
+
+}
+.RequestedAction{
+ display: flex;  
+ justify-content: space-between;
+ align-items: center;
+}
+#songItemDescription {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #f3f3dc9e;
+    background-color: #fff;
+}
+#songItemDescription:hover{
+    background-color: #eef2ff;
+}
+
+#S_songItemDescription{
+   
+padding: 2rem;
+}
+#SingleDescriptionimg{
+    width: 16rem;
+    border-radius: 8px;
+}
+.SingleSongData p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2d3138d9;
+    padding-bottom: 0.27rem;
+}
+.SingleSongData h6 {
+    color: #9da5b0;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 1rem;
+    /* padding-bottom: 0.2rem; */
+}
+.SingleSongData button {
+   width: 10rem;
+    /* padding-bottom: 0.2rem; */
+}
+.singlesongeD_F {
+    margin-right: 3rem;
+    width: 16rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-right: -27rem;
+}
+.midiDescrition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.midiDescrition span {
+    margin: 2rem;
+}
+.SingleSongflex{
+    display: flex;
+
+}
+
+.singleSongDes_D{
+width: 50%;
+text-align: left;
+}
+
+.SingleSongData{
+margin-left: 3rem;
+}
+
+.searchSong_list{
+    width: 65%;
+    margin: auto;
+}
+
+/* footer start */
+.entry-content p {
+    margin-bottom: 1.462em;
+    font-size: 13px;
+    color: #464646;
+    padding: 0rem 2rem; 
+    margin-top: auto;
+    
+}
+
+
+
+section#main {
+    background: white;
+    border: 1px solid #f0f0f0;
+    padding: 20px 0px 20px 20px;
+    margin-top: auto;
+    
+}
+
+#footer{
+    width: 100%;
+    margin-top: auto;
+   
+}
+.main{
+    /* min-height: 69vh; */
+    margin-top: auto;
+}
+.container section a:hover {
+    border-bottom: 1px solid #ffffff81;
+    outline-color: none;
+    margin-top: auto;
+}
+/* footer end */
+
+
+#main_conain {
+    height: auto;
+    padding-bottom: 8rem;
+}
+
+section a:hover {
+    border: none;
+
+}
+.AdsPages{
+margin-top: 3rem;
+}
+
+#paypalbtn{
+    margin-right: 1rem;
+}
+
+#singleSongViews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#MusicListaline{
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* / smartphones, iPhone, portrait 480x320 phones /  */
+@media (min-width:320px)  { 
+    /* .collapse.show {
+        display: contents;
+        
+    } */
+    .flex2 {
+        flex: 2 2 2em;
+        padding-right: 0rem;
+        text-align: center;
+    }
+    #downloadpage {
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 3%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 99%;
+        margin: auto;
+    }
+    .myButton {
+        width: 50%;
+        margin: auto;
+            margin-bottom: auto;
+        margin-bottom: 1rem;
+    }
+    .top_song_D {
+        width: 99%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 100%;
+        margin: auto;
+        border-radius: 12px;
+    }
+    .sticky {
+        position: sticky;
+        top: 7.5%;
+        background-color: white;
+        padding: 7px 2rem;
+        font-size: 20px;
+        z-index: 6;
+        border-radius: 12px 12px 0px 0px;
+    }
+    div.contents {
+        margin-left: 0px;
+        padding: 1px 16px;
+    }
+    .latest_P_D {
+        width: 99%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+    }
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 17px 13px;
+        text-decoration: none;
+    }
+    #mainAdmindiv {
+        margin-top: 1rem;
+    }
+    .logo_discription {
+        font-size: 10px;
+        font-weight: bold;
+        position: absolute;
+        line-height: 2px;
+        margin-left: 4rem;
+    }
+    .logo {
+        padding-left: 0rem;
+        padding-right: 10%;
+    }
+    .column h4 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .form-inline {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .logo {
+        padding-left: 0rem;
+        padding-right: 10%;
+    }
+    #pagelink {
+        padding-right: 0rem;
+        width: 100%;
+        text-align: center;
+    }
+    #addtoCard {
+        box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px;
+        font-size: 8px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #788a9600;
+        padding: 0.5rem 0.5rem;
+        font-style: bold;
+        margin-top: 0rem;
+    }
+    .single_songDetels {
+        box-shadow: 0 4px 24px rgb(48 62 75 / 6%);
+                padding: 0px 0px;
+    }
+    .labels {
+        color: #000000bf;
+        background: #efefef;
+        font-size: 11px;
+        padding: 5px 3px;
+        margin-right: 1px;
+        border-radius: 10px;
+        box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+        box-shadow: rgb(41 41 83 / 13%) 0px 38px 76px -23px, rgb(0 0 0 / 23%) 0px 30px 60px -35px, rgb(10 37 57 / 35%) 0px -4px 1px -4px inset;
+    }
+    .main {
+        padding: 6px;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .songUpdateDataCard{
+        width: 100%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    label span a {
+        word-break: break-all;
+    }
+    .searchSong_list {
+        width: 96%;
+        margin: auto;
+    }
+    .logoDiv {
+        width: 50%;
+        margin-right: 15%;
+    }
+    .column {
+        width: 100%;
+        margin: auto;
+    }
+    .column h4 {
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .TopPianoMIdiD {
+        width: 100%;
+        margin: 0 1rem;
+    }
+.aside_addP {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2rem;
+        margin-right: 2rem;
+    margin-right: 2rem;
+    margin-right: 3rem;
+    padding: 0rem 3rem;
+        padding-left: 3rem;
+    color: #8b8b8b;
+}
+
+.maincontainS {
+    width: 100%;
+}
+.sidebar {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;
+}
+.musicTopbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 60%;
+    /* margin: auto; */
+    padding-top: 0;
+    /* padding: 2rem;
+    margin: 1rem 0rem; */
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+}
+.sidebar {
+    width: 100%;
+    margin: auto;
+        margin-top: auto;
+    height: auto;
+    position: relative;
+    margin-top: 4.8rem;
+}
+.S_price {
+    font-size: 13px;
+    color: #101010;
+    font-weight: bold;
+    background: #ffffff;
+    border: 1px solid #d7e0e6de;
+    padding: 0.5rem 1rem;
+    font-style: bold;
+    margin-top: 0.6rem;
+    margin-right: 8rem;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+.single_songDetels ul {
+    align-items: center;
+}
+.flex2 {
+    flex: 3 3 4em;
+    padding-right: 0rem;
+}
+.PageMaindiv{
+    width: 100%;
+}
+.SingleSongData p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3138d9;
+    padding-bottom: 0.27rem;
+}
+.SingleSongData h6 {
+    color: #9da5b0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+}
+#SingleDescriptionimg {
+    width: 10rem;
+    border-radius: 8px;
+}
+.listofSong {
+    padding: 1rem;
+}
+h4 {
+    width: 100%;
+    margin: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 1rem;
+}
+#mainAdmindiv{
+    margin-top: 1rem;
+}
+.aside_add{
+    display: block;
+    clear: both;
+}
+.single_songDetelsss {
+    transform: none;
+    box-shadow: none;
+    margin: 0rem;
+    padding: 0.1rem 0.1rem;
+        padding-top: 0.1rem;
+    padding-top: 1rem;
+    box-shadow: rgba(221, 223, 225, 0.97) 0px 8px 24px;
+    padding-top: 0.2rem;
+}
+.flex-item h6 {
+    color: #9da5b0;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+.flex-item p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3138d9;
+    padding-top: 1;
+    padding-bottom: 0.27rem;
+    line-height: 1;
+}
+.flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+    background-color: #fff;
+    padding-right: 0rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.totall_prices {
+    float: right;
+    margin-right: 4rem;
+    text-align: right;
+}
+#songItemDescription {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #f3f3dc9e;
+    background-color: #fff;
+    flex-wrap: wrap;
+
+}
+.SingleSongData {
+    margin-left: 0rem;
+}
+.song_UPload_list {
+    width: 100%;
+    margin: auto;
+        margin-top: auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+.DopfileDiv {
+    margin-top: 3rem;
+    width: 100%;
+    height: 200px;
+    border: 2px dotted gray;
+    margin: auto;
+}
+.updatefromF_A {
+    padding: 0.5rem;
+    border-bottom: 1px solid #d8dadc;
+    width: 76%;
+    margin: auto;
+    padding: 3rem;
+        padding-left: 3rem;
+    padding-left: 3rem;
+    width: 100%;
+    margin: auto;
+}
+}
+
+/* / portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. /  */
+@media (min-width:481px)  { 
+    /* .collapse.show {
+        display: contents;
+        
+    } */
+    .column h4 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .flex2 {
+        flex: 2 2 2em;
+        padding-right: 0rem;
+        text-align: center;
+    }
+    #downloadpage {
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 15%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 99%;
+        margin: auto;
+    }
+    .myButton {
+        width: 30%;
+        margin: auto;
+            margin-bottom: auto;
+        margin-bottom: 1rem;
+    }
+    .top_song_D {
+        width: 99%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 99%;
+        margin: auto;
+        border-radius: 12px;
+    }
+    .sticky {
+        position: sticky;
+        top: 7.5%;
+        background-color: white;
+        padding: 7px 2rem;
+        font-size: 20px;
+        z-index: 6;
+        border-radius: 12px 12px 0px 0px;
+    }
+    div.contents {
+        margin-left: 0px;
+        padding: 1px 16px;
+    }
+    .latest_P_D {
+        width: 99%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 250px;
+        vertical-align: middle;
+    }
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 17px 13px;
+        text-decoration: none;
+    }
+    #mainAdmindiv {
+        margin-top: 3rem;
+    }
+    nav .logo_discription {
+        font-size: 12px;
+        font-weight: bold;
+        position: absolute;
+        line-height: -10px;
+        margin-left: 7rem;
+    }
+    .logo {
+        padding-left: 2rem;
+        padding-right: 10%;
+    }
+    .form-inline {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    .logo {
+        padding-left: 2rem;
+        padding-right: 10%;
+    }
+    #pagelink {
+        padding-right: 2rem;
+        width: auto;
+    }
+    #addtoCard {
+        box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px;
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #788a9600;
+        padding: 0.5rem 2rem;
+        font-style: bold;
+        margin-top: 0.1rem;
+    }
+    .single_songDetels {
+        box-shadow: 0 4px 24px rgb(48 62 75 / 6%);
+        /* padding: 0px 8px; */
+        border-radius: 8px;
+    }
+    .labels {
+        color: #000000bf;
+        background: #efefef;
+        font-size: 11px;
+        padding: 5px 3px;
+        margin-right: 14px;
+        border-radius: 10px;
+        box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+        box-shadow: rgb(41 41 83 / 13%) 0px 38px 76px -23px, rgb(0 0 0 / 23%) 0px 30px 60px -35px, rgb(10 37 57 / 35%) 0px -4px 1px -4px inset;
+    }
+    .main {
+        padding: 16px;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .songUpdateDataCard{
+        width: 100%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    #navbarSupportedContent{
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 2rem;
+        
+    }
+    #navbarSupportedContent  ul{
+        display:ruby;
+        
+    }
+    #navbarSupportedContent  ul li{
+        margin: 0rem 2rem;
+    }
+    .logoDiv {
+        width: 37%;
+        margin-right: 15%;
+    }
+    .column {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        height: auto;
+        position: relative;
+        margin-top: 13%;
+    }
+    #paymentproDiv{
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+    }
+    .DopfileDiv {
+        margin-top: 3rem;
+        width: 90%;
+        height: 200px;
+        border: 2px dotted gray;
+        margin: auto;
+    }
+    .song_UPload_list {
+        width: 98%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 3rem;
+        text-align: left;
+    }
+    .updatefromF_A {
+        padding: 0.5rem;
+        border-bottom: 1px solid #d8dadc;
+        width: 90%;
+        margin: auto;
+        padding: 3rem;
+            padding-left: 3rem;
+        padding-left: 3rem;
+        width: 98%;
+        margin: auto;
+        padding-left: 0;
+    }
+    .aside_addP {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+            padding-left: 3rem;
+        color: #8b8b8b;
+    }
+    .maincontainS {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        position: relative;
+    }
+    .musicTopbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 60%;
+        /* margin: auto; */
+        padding-top: 0;
+        /* padding: 2rem;
+        margin: 1rem 0rem; */
+        padding: 1rem 0rem;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        height: auto;
+        position: relative;
+        margin-top: 4.8rem;
+    }
+    .S_price {
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #d7e0e6de;
+        padding: 0.5rem 2rem;
+        font-style: bold;
+        margin-top: 0.6rem;
+        margin-right: 8rem;
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+    .single_songDetels ul {
+        align-items: center;
+    }
+    .flex2 {
+        flex: 3 3 4em;
+        padding-right: 0rem;
+    }
+    .PageMaindiv{
+        width: 100%;
+    }
+    .SingleSongData p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #2d3138d9;
+        padding-bottom: 0.27rem;
+    }
+    .SingleSongData h6 {
+        color: #9da5b0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    #SingleDescriptionimg {
+        width: 10rem;
+        border-radius: 8px;
+    }
+    .listofSong {
+        padding: 1rem;
+    }
+    h4 {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        font-size: 1rem;
+    }
+    #mainAdmindiv{
+        margin-top: 1rem;
+    }
+    .aside_add{
+        display: block;
+        clear: both;
+    }
+    .single_songDetelsss {
+        transform: none;
+        box-shadow: none;
+        margin: 1rem;
+        padding: 0.1rem 0.1rem;
+            padding-top: 0.1rem;
+        padding-top: 1rem;
+        box-shadow: rgba(221, 223, 225, 0.97) 0px 8px 24px;
+        padding-top: 0.2rem;
+    }
+    .flex-item p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #2d3138d9;
+        padding-top: 1;
+        padding-bottom: 0.27rem;
+        line-height: 1;
+        text-align: left;
+    }
+    .flex-item h6 {
+        color: #9da5b0;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.2rem;
+        text-align: left;
+    }
+    .flex-item {
+        color: white;
+        font-weight: bold;
+        font-size: 2.2em;
+        text-align: center;
+        background-color: #fff;
+        padding-right: 1rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .SingleSongData {
+        margin-left: 1rem;
+    }
+    #paymentproDiv {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+    }
+}
+
+
+
+
+/* / portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones /  */
+@media (min-width:641px)  { 
+    /* .collapse.show {
+        display: contents;
+         */
+    /* } */
+    .flex2 {
+        flex: 2 2 2em;
+        padding-right: 0rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    #downloadpage {
+        width: 96%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 28%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 96%;
+        margin: auto;
+    }
+    .myButton {
+        width: 30%;
+        margin: auto;
+            margin-bottom: auto;
+        margin-bottom: 1rem;
+    }
+    .top_song_D {
+        width: 90%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+            margin-left: auto;
+        margin-top: auto;
+        border-radius: 12px;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+    .sticky {
+        position: sticky;
+        top: 7.5%;
+        background-color: white;
+        padding: 7px 2rem;
+        font-size: 20px;
+        z-index: 6;
+        border-radius: 12px 12px 0px 0px;
+    }
+    div.contents {
+        margin-left: 0px;
+        padding: 1px 16px;
+    }
+    .latest_P_D {
+        width: 90%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+    }
+    .sidebar a {
+        display: block;
+        color: black;
+        padding:16px;
+        text-decoration: none;
+    }
+    #mainAdmindiv {
+        margin-top: 5rem;
+    }
+    .songUpdateDataCard{
+        width: 70%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    #addtoCard {
+        box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px;
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #788a9600;
+        padding: 0.5rem 2rem;
+        font-style: bold;
+        margin-top: 0rem;
+    }
+    .searchSong_list {
+        width: 80%;
+        margin: auto;
+    }
+    #navbarSupportedContent{
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 2rem;
+        
+    }
+    #navbarSupportedContent  ul{
+        display:ruby;
+        
+    }
+    #navbarSupportedContent  ul li{
+        margin: 0rem 2rem;
+    }
+    .logoDiv {
+        width: 30%;
+        margin-right: 15%;
+    }
+    .column {
+        width: 100%;
+        margin: auto;
+    }
+    #left{
+        margin-left: 2rem;
+    }
+    .TopPianoMIdiD {
+        width: 100%;
+        margin: 0 2rem;
+    }
+    .aside_addP {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+            padding-left: 3rem;
+        color: #8b8b8b;
+        margin-top: 5rem;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 0rem;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        height: auto;
+        position: relative;
+        margin-top: 4.8rem;
+    }
+    .S_price {
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #d7e0e6de;
+        padding: 0.5rem 3rem;
+        font-style: bold;
+        margin-top: 0.6rem;
+        margin-right: 8rem;
+        margin-left: 1rem;
+        margin-right: 6rem;
+    }
+    .single_songDetels ul {
+        align-items: center;
+    }
+    .flex2 {
+        flex: 3 3 4em;
+        padding-right: 0rem;
+    }
+    .PageMaindiv{
+        width: 100%;
+    }
+    .SingleSongData p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #2d3138d9;
+        padding-bottom: 0.27rem;
+    }
+    .SingleSongData h6 {
+        color: #9da5b0;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    #SingleDescriptionimg {
+        width: 16rem;
+        border-radius: 8px;
+    }
+    .listofSong {
+        padding: 2rem;
+    }
+    h4 {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    #mainAdmindiv{
+        margin-top: 4rem;
+    }
+    .listofSong{
+        padding: 2rem;
+    }
+    .musicTopbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+        padding-top: 0;
+        padding: 2rem;
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* / (640x960) iPhone 4 & 4S / */
+@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
+    div.contents {
+        margin-left: 0px;
+        padding: 1px 16px;
+    }
+    .songUpdateDataCard{
+        width: 100%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    #navS_from{
+        width: 70%;
+        margin: auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        height: auto;
+        position: relative;
+        margin-top: 11%;
+    }
+    #paymentproDiv{
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+    }
+    .DopfileDiv {
+        margin-top: 3rem;
+        width: 80%;
+        height: 200px;
+        border: 2px dotted gray;
+        margin: auto;
+    }
+    .song_UPload_list {
+        width: 96%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 3rem;
+        text-align: left;
+    }
+    .updatefromF_A {
+        padding: 0.5rem;
+        border-bottom: 1px solid #d8dadc;
+        width: 76%;
+        margin: auto;
+        padding: 3rem;
+            padding-left: 3rem;
+        padding-left: 3rem;
+        width: 96%;
+        margin: auto;
+        padding-left: 0;
+    }
+    #paymentproDiv {
+       
+        margin-right: 7rem;
+    }
+}
+
+
+/* / tablet, landscape iPad, lo-res laptops ands desktops /  */
+@media (min-width:961px)  { 
+
+    .collapse.show {
+        display: flex;
+        justify-content: right;
+        
+    }
+    .flex2 {
+        flex: 4 2 4em;
+        padding-right: 5rem;
+    }
+    #downloadpage {
+        width: 80%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 35%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 96%;
+        margin: auto;
+    }
+    .myButton {
+        width: 30%;
+        margin: auto;
+            margin-bottom: auto;
+        /* margin-bottom: 1rem; */
+    }
+    div.contents {
+        margin-left: 200px;
+        padding: 1px 16px;
+    }
+    .latest_P_D {
+        width: 70%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+    }
+    .songUpdateDataCard{
+        width: 100%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    .top_song_D {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    #addtoCard {
+        box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px;
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #788a9600;
+        padding: 0.5rem 2rem;
+        font-style: bold;
+        margin-top: 1.2rem;
+    }
+    #navbarSupportedContent{
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 2rem;
+        
+    }
+    #navbarSupportedContent  ul{
+        display:ruby;
+        
+    }
+    #navbarSupportedContent  ul li{
+        margin: 0rem 2rem;
+    }
+    .logoDiv {
+        width: 18%;
+        margin-right: 15%;
+    }
+    #navS_from{
+        width: 50%;
+        margin: auto;
+    }
+    .searchSong_list {
+        width: 70%;
+        margin: auto;
+    }
+    .aside_addP {
+        width: 32%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+        color: #8b8b8b;
+    }
+    .side__data {
+        padding-left: 5rem;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 2rem;
+        flex-wrap: wrap;
+    }
+    .aside_addP {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+            padding-left: 3rem;
+        padding-left: 3rem;
+        color: #8b8b8b;
+    }
+
+    .maincontainS {
+        width: 90%;
+        margin: auto;
+        margin-left: 0;
+    }
+    .SingleSongflex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        width: 70%;
+        margin: auto;
+    }
+    #top_Song_list{
+        margin: auto;
+    }
+    .column h4 {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* -----------Top song page---------------- */
+    
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 2rem;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        height: auto;
+        position: relative;
+        margin-top: 13%;
+    }
+    .flex3 {
+        flex: 1 1 1em;
+        border-radius: 0px 8px 8px 0px;
+        text-align: right;
+    }
+
+    #MusicListflex3{
+        flex: 3 3 3em;
+        border-radius: 0px 8px 8px 0px;
+        text-align: right;
+    }
+    .PageMaindiv {
+        width: 80%;
+        margin: auto;
+    }
+    .SingleSongData p {
+        font-size: 30px;
+        font-weight: 600;
+        color: #2d3138d9;
+        padding-bottom: 0.27rem;
+    }
+    .SingleSongData h6 {
+        color: #9da5b0;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    #paymentproDiv{
+        float: right;
+        display: flex;
+        flex-direction: column;
+    }
+    .DopfileDiv {
+        margin-top: 3rem;
+        width: 60%;
+        height: 200px;
+        border: 2px dotted gray;
+        margin: auto;
+    }
+    .song_UPload_list {
+        width: 80%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 3rem;
+        text-align: left;
+    }
+    .updatefromF_A {
+        padding: 0.5rem;
+        border-bottom: 1px solid #d8dadc;
+        width: 76%;
+        margin: auto;
+        padding: 3rem;
+            padding-left: 3rem;
+        padding-left: 3rem;
+        width: 64%;
+        margin: auto;
+        padding-left: 0;
+    }
+    .musicTopbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-top: 0;
+        padding: 2rem;
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #paymentproDiv {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 7rem;
+    }
+}
+
+
+
+
+
+
+
+/* / big landscape tablets, laptops, and desktops /  */
+@media (min-width:1025px) { 
+    .flex2 {
+        flex: 3 2 2em;
+        padding-right: 3.5rem;
+        text-align: left;
+        padding: 0rem 1rem;
+    }
+  
+    #downloadpage {
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 35%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 100%;
+        margin: auto;
+    }
+    div.contents {
+        margin-left: 200px;
+        padding: 1px 16px;
+    } 
+    .latest_P_D {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+    }
+    .songUpdateDataCard {
+        width: 80%;
+        margin: auto;
+        padding-top: 6rem;
+    }
+    .searchSong_list {
+        width: 65%;
+        margin: auto;
+    }
+    #navbarSupportedContent  ul li{
+        margin: 0rem 0rem;
+    }
+    #navbarSupportedContent {
+        display: flex;
+        justify-content: space-around;
+        margin: 0rem;
+    }
+    #pagelink {
+        padding-right: 0rem;
+        width: auto;
+    }
+    .logoDiv {
+        width: 17%;
+        margin-right: 15%;
+    }
+    #navS_from{
+        width: 70%;
+        margin: auto;
+    }
+    .aside_addP {
+        width: 80%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+            padding-left: 3rem;
+        padding-left: 3rem;
+        color: #8b8b8b;
+    }
+
+   
+    .side__data {
+        padding-left: 0rem;
+        margin-right: 0rem;
+    }
+    .TopPianoMIdiD {
+        width: 100%;
+        margin: 0px 2rem;
+    }
+    .aside_add {
+        width: 70%;
+        box-sizing: border-box;
+        margin: 2rem;
+        margin-right: 6rem;
+        padding: 0rem 3rem;
+        color: #8b8b8b;
+        margin: auto;
+    }
+    .PageMaindiv {
+        width: 64%;
+    }
+    .maincontainS {
+        width: 65%;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 2rem;
+        flex-wrap:nowrap;
+    }
+    #navS_from {
+        width: 60%;
+        margin: auto;
+    }
+    #mainAdmindiv {
+        margin-top: 4rem;
+    }
+    .PageMaindiv {
+        width: 62%;
+        margin: 1rem;
+    }
+    .column {
+        width: 48%;
+        margin: auto;
+            margin-top: auto;
+            margin-left: auto;
+        margin-top: 0;
+    }
+    .PageMaindiv{
+        width: 70%;
+    }
+    #songItemDescription {
+        padding: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #f3f3dc9e;
+        background-color: #fff;
+        width: 60%;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 0rem;
+        flex-wrap: wrap;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 80%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: auto;
+        border-radius: 12px;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+    }
+
+    #top_Song_list{
+        width: 80%;
+        margin: auto;
+    }
+    #MusicListflex3 {
+        flex: 4 3 7em;
+        border-radius: 0px 8px 8px 0px;
+        text-align: right;
+    }
+    #paymentproDiv {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 7rem;
+    }
+    .musicTopbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-top: 0;
+        padding: 2rem;
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+        flex-wrap: wrap;
+        align-items: last baseline;
+    }
+    .song_UPload_list {
+        width: 90%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: auto;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+}
+
+/* / (768x1024) iPad 1 & 2, Portrait / */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+    .flex2 {
+        flex: 3 2 2em;
+        padding-right: 1em;
+    }
+    #downloadpage {
+        width: 96%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 28%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 96%;
+        margin: auto;
+    }
+    .myButton {
+        width: 30%;
+        margin: auto;
+            margin-bottom: auto;
+        margin-bottom: 1rem;
+    }
+    .top_song_D {
+        width: 90%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 90%;
+        margin: auto;
+        border-radius: 12px;
+    }
+    .sticky {
+        position: sticky;
+        top: 7.5%;
+        background-color: white;
+        padding: 7px 2rem;
+        font-size: 20px;
+        z-index: 6;
+        border-radius: 12px 12px 0px 0px;
+    }
+    div.contents {
+        margin-left: 0px;
+        padding: 1px 16px;
+    }
+    .latest_P_D {
+        width: 70%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 360px;
+        vertical-align: middle;
+    }
+    .sidebar a {
+        display: block;
+        color: black;
+        padding:16px;
+        text-decoration: none;
+    }
+    #mainAdmindiv {
+        margin-top: 5rem;
+    }
+    .songUpdateDataCard{
+        width: 60%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    #addtoCard {
+        box-shadow: rgb(46 48 90 / 25%) 0px 4px 8px -2px, rgb(0 0 0 / 17%) 0px 2px 6px -1px;
+        font-size: 13px;
+        color: #101010;
+        font-weight: bold;
+        background: #ffffff;
+        border: 1px solid #788a9600;
+        padding: 0.5rem 2rem;
+        font-style: bold;
+        margin-top: 1.2rem;
+    }
+    #navbarSupportedContent{
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 0rem;
+        
+    }
+    #navbarSupportedContent  ul{
+        display:ruby;
+        
+    }
+    #navbarSupportedContent  ul li{
+        margin: 0rem 2rem;
+    }
+    .aside_addP {
+        width: 32%;
+        box-sizing: border-box;
+        /* margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem; */
+        color: #8b8b8b;
+    }
+    .side__data {
+        padding-left: 5rem;
+    }
+    .flex3 {
+        flex: 3 3 3em;
+        border-radius: 0px 8px 8px 0px;
+        text-align: right;
+    }
+    .aside_addP {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+            padding-left: 3rem;
+        color: #8b8b8b;
+    }
+    .side__data {
+        padding-left: 0rem;
+        margin-right: 0rem;
+    }
+    .PageMaindiv {
+        width: 70%;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 2rem;
+        flex-wrap: wrap;
+        
+    }
+    .maincontainS {
+        width: 90%;
+    }
+    #top_Song_list{
+        width: 80%;
+        margin: auto;
+    }
+    #navbarSupportedContent {
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 0rem;
+            margin-top: 0rem;
+        margin-top: 1rem;
+    }
+   
+}
+
+
+@media screen and (min-width: 1281px) {
+    .flex2 {
+        flex: 2 2 2em;
+        padding-right: 3.5rem;
+        text-align: left;
+        padding: 0rem 1rem;
+        /* line-height: 1; */
+    }
+  
+    #downloadpage {
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .ant-modal-centered .ant-modal {
+        top: 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 35%;
+        margin-top: 15%;
+    }
+    #admin_songlist {
+        width: 90%;
+        margin: auto;
+    }
+    div.contents {
+        margin-left: 200px;
+        padding: 1px 16px;
+    } 
+    .latest_P_D {
+        width: 100%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+        height: auto;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+    }
+    .songUpdateDataCard {
+        width: 80%;
+        margin: auto;
+        padding-top: 6rem;
+    }
+    .aside_addP {
+        width: 32%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+        color: #8b8b8b;
+    }
+    
+    .side__data {
+        padding-left: 5rem;
+    }
+
+    .TopPianoMIdiD {
+        width: 80%;
+      
+        margin: 0px 8rem;
+    }
+#TopPianoMIdiD{
+    width: 90%;
+    margin: 0px 8rem;
+}
+    .aside_addP {
+        width: 32%;
+        box-sizing: border-box;
+        margin: 2rem;
+            margin-right: 2rem;
+        margin-right: 3rem;
+        padding: 0rem 3rem;
+        color: #8b8b8b;
+    }
+    #aside_addP {
+        width: 33%;
+        box-sizing: border-box;
+        
+        color: #8b8b8b;
+    }
+    .aside_add {
+        width: 30%;
+        box-sizing: border-box;
+        margin: 1rem;
+        margin-right: 6rem;
+        padding: 0rem 3rem;
+        color: #8b8b8b;
+    }
+    .asideM_div {
+        display: flex;
+        width: 100%;
+        margin: 0 2rem;
+        flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .cardPages_prices {
+        background: white;
+        border: 4px solid #f0f0f0;
+        margin-top: 18px;
+        width: 65%;
+        margin: auto;
+            margin-top: auto;
+            margin-left: auto;
+        margin-top: auto;
+        margin-top: auto;
+        border-radius: 12px;
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+    .aside_add {
+        width: 30%;
+        box-sizing: border-box;
+        margin: 2rem;
+        /* margin-right: 6rem; */
+        /* padding: 0rem 3rem; */
+        color: #8b8b8b;
+    }
+    #paymentproDiv{
+        float: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: 7rem;
+    }
+    #top_Song_list {
+        width: 72%;
+        margin: auto;
+    }
+    .song_UPload_list {
+        width: 90%;
+        margin: auto;
+            margin-top: auto;
+        margin-top: auto;
+        margin-top: 3rem;
+        text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1825px) {
+    #mainbody {
+        max-width: 1281px;
+        margin: auto;
+            margin-top: auto;
+        margin-top: 6rem;
+    }
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotmidi Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="songDescription.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html"><span class="logo_title">gotmidi</span><br/><span class="logo_discription">licensed piano.mid files</span></a>
+      </div>
+   
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div>
+            <form class="form-inline">
+           
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search songs artists and albums">
+                <button class="btn my-sm-0" type="submit" style="background-color: rgba(28,173,254,255); color: white;">Search</button>
+              </div>
+            </form>
+          </div>
+          <div id="pagelink">
+ <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loginPage.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Register.html">Register</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- -------------End navbar-------------- -->
+      <!-- __________start main body_____________ -->
+    <div class="main">
+        <div class="PageMaindiv single_songDetels">
+            <div class="single_songDetels"  style="box-shadow: none;">
+                <ul class="flex-container" style="margin-top: 2rem; margin-bottom: 2rem;">
+                  <li class="flex-item flex1">
+                    <div class="videoimg">
+                    <img src="./img/song_img2.jpg" alt="" width="8rem">
+                    
+                    </div>
+                  </li>
+                  <li class="flex-item flex2" style="margin-top: 1rem;">
+                      <p>The Kid LAROI, Justin Bieber</p>
+                    <h6>justin bieber</h6>
+                    <button class="btn" id="songCardDetails" title="Add to Cart"> $2.29 </button>
+                </li>
+                  </li>
+                  <li class="flex-item flex3">
+                    <iframe width="260" height="115" src="https://www.youtube.com/embed/rKgFBrETc70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                </ul>
+              </div>
+              <div class="midiDescrition">
+             <a href="#">MIDI Descriptio</a>
+                        <div id="desc-str-newline">LILHUDDY - America's Sweetheart (In the key of E Major) PIANO MIDI FILE DOWNLOAD</div>
+                    </div>
+            <div class="listofSong">
+                <div class="single_songDetels" id="listofsongitme"  style="box-shadow: none;">
+                    <ul class="flex-container" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <li class="flex-item flex1">
+                          <div class="videoimg">
+                          <img src="./img/song_img2.jpg" alt="" width="8rem">
+                          <div class="overlay">
+                            <a href="#" class="icon" title="Play">
+                              <i class="fas fa-play"></i>
+                            </a>
+                          </div>
+            
+                          </div>
+                        
+                        </li>
+                        <li class="flex-item flex2"><p>The Kid LAROI, Justin Bieber</p>
+                          <h6>justin bieber</h6>
+                        <div id="song_data">
+                          <span class="labels">C# Major<br/><span class="small_subtitle">Key</span></span>
+                          <span class="labels">170<br/><span class="small_subtitle">BPM</span></span>
+                       
+                        </div>
+                      </li>
+                        </li>
+                        <li class="flex-item flex3">
+                          <button class="btn" id="addtoCard" title="Add to Cart"> $2.29 </button>
+            
+                      </li>
+            
+                      </ul>
+                  </div>
+            </div>
+                    </div>
+        </div>
+      
+   
+</div>
+    <!-- ___________________javascript_________________ -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

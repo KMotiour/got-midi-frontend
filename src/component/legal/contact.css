@@ -1,0 +1,28 @@
+.entry-content p {
+    margin-bottom: 1.462em;
+    font-size: 13px;
+    color: #464646;
+    padding: 0rem 2rem; 
+}
+
+section#main {
+    background: white;
+    border: 1px solid #f0f0f0;
+    padding: 20px 0px 20px 20px;
+    margin-top: 18px;
+}
+
+#footer{
+    width: 100%;
+    margin-bottom: auto;
+}
+.main{
+    min-height: 69vh;
+}
+.container section a {
+   /* color: #fff; */
+}
+.container section a:hover {
+    border-top: 1px solid #ffffff81;
+    outline-color: none;
+}
